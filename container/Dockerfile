@@ -47,4 +47,4 @@ RUN dpkg -i /usr/local/share/google-chrome-stable_current_amd64.deb
 COPY bin/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 COPY supervisor/* /etc/supervisor/conf.d/
-ENTRYPOINT ["entrypoint.bash"]
+# ENTRYPOINT ["entrypoint.bash"]
