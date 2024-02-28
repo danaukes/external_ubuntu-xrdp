@@ -8,8 +8,6 @@ RUN apt update && DEBIAN_FRONTEND=noninteractive apt -y install \
   fonts-noto \
   git \
   ibus-mozc \
-  language-pack-ja-base \
-  language-pack-ja \
   less \
   nano \
   net-tools \
@@ -17,10 +15,12 @@ RUN apt update && DEBIAN_FRONTEND=noninteractive apt -y install \
   sudo \
   supervisor\ 
   ubuntu-gnome-desktop \
-  vim \
+  # vim \
   xrdp \
   && apt clean && rm -rf /var/lib/apt/lists/*
 
+  # language-pack-ja-base \
+  # language-pack-ja \
 
 # sshd
 RUN mkdir -p /var/run/sshd \

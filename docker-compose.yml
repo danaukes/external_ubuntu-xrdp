@@ -2,13 +2,13 @@ version: "3"
 services:
   application:
     build: container
-    image: naruhito/ubuntu-xrdp:22.04
+    image: xrdp
     container_name: ubuntu-xrdp
     hostname: ubuntu-xrdp
     restart: always
     ports:
-      - "13389:3389"
-      - "10022:22"
+      - "3389:3389"
+      - "2200:22"
     # security_opt:
     #   - "seccomp:unconfined"  #NOTE: https://www.creationline.com/lab/46861 >> sudo yum install libseccomp OR sudo apt install libseccomp-dev
     cap_add:
